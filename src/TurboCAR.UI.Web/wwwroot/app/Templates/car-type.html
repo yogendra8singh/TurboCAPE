@@ -1,0 +1,18 @@
+﻿<div class="row">
+    <h3 class="graph-title">CAR status graph</h3>
+</div>
+<div class="col-sm-3">
+    <ul class="list-none">
+        <li><p><i class="fa fa-square" style="color:lightblue" aria-hidden="true"></i> CAR Booked</p></li>
+        <li><p><i class="fa fa-square" style="color:crimson" aria-hidden="true"></i> Committee reviewed</p></li>
+        <li><p><i class="fa fa-square" style="color:lightgreen" aria-hidden="true"></i> Creator CA Approved</p></li>
+        <li><p><i class="fa fa-square" style="color:lightgrey" aria-hidden="true"></i> Creator recommended</p></li>
+    </ul>
+</div>
+
+<div class="col-sm-9">
+    <canvas id="line" class="chart chart-line" chart-data="charts.data"
+chart-labels="charts.labels" chart-series="charts.series" chart-options="charts.options"
+chart-dataset-override="charts.datasetOverride" chart-click="charts.onClick" chart-legend="true">
+</canvas> 
+</div>

@@ -1,0 +1,38 @@
+﻿[
+  {
+    "id": "200100",
+    "borrower": "Loan Candidate 1",
+    "carType": "NewLoan",
+    "teamName": "AB",
+    "status": "New",
+    "creationDate": "2016-07-29T11:48:00.4799633+05:30",
+    "activity": "Edit CAR"
+  },
+  {
+    "id": "200101",
+    "borrower": "Loan Candidate 2",
+    "carType": "NewLoan",
+    "teamName": "XY",
+    "status": "New",
+    "creationDate": "2016-07-29T11:48:00.4809611+05:30",
+    "activity": "Edit CAR"
+  },
+  {
+    "id": "200102",
+    "borrower": "Loan Candidate 3",
+    "carType": "BusinessRisk",
+    "teamName": "XY",
+    "status": "New",
+    "creationDate": "2016-07-29T11:48:00.4809611+05:30",
+    "activity": "Edit CAR"
+  },
+  {
+    "id": "200103",
+    "borrower": "Loan Candidate 4",
+    "carType": "CorrectionCar",
+    "teamName": "AB",
+    "status": "New",
+    "creationDate": "2016-07-29T11:48:00.4809611+05:30",
+    "activity": "Edit CAR"
+  }
+]

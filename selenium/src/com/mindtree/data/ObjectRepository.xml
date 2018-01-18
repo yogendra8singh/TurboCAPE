@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pages>
+<homepage>
+<locator name='plus' type='css' value='.fa.fa-plus' />
+<locator name='borrower' type='name' value='borrowerdropdown' />
+<locator name='team' type='xpath' value="//select[@ng-model='carController.teamId']" />
+<locator name='SRMradioBtn' type='xpath' value="html/body/div[1]/div[2]/div/div/div/div/div[2]/form/div[3]/div[3]/div/div[1]/div[1]/div/label/input"/>
+<locator name='SRMselect' type='xpath' value="//select[@ng-model='carController.DealTeamLeaderId']" />
+<locator name='associate' type='xpath' value="//select[@ng-model='carController.CARAssociateId']" />
+<locator name='rm' type='xpath' value="//select[@ng-model='carController.CARRMId']" />
+<locator name='sco' type='xpath' value="//select[@ng-model='carController.CARSCOId']" />
+<locator name='create' type='xpath' value="//button[contains(text(),'Create CAR')]" />
+<locator name='carList' type='css' value='.panel-title.pull-left' />
+<locator name='createCarText' type='css' value='.margin.bg-3' />
+</homepage>
+</Pages>

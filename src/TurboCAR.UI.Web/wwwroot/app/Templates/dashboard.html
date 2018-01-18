@@ -1,0 +1,41 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-primary" ng-controller="DashboardChartsController as charts">
+            <div class="panel-heading">
+                <h3 class="panel-title">My Wishlist Statistics</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row margin-all-zero">
+                                <div class="col-md-12" ng-include="'app/Templates/car-status.html'"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row margin-all-zero">
+                                <div class="col-md-12" ng-include="'app/Templates/car-type.html'"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary" ng-controller="DashboardController as dashboard">
+            <div class="panel-heading clearfix">
+                <h3 class="panel-title pull-left">CAR My Wishlist</h3>
+                <div class="pull-right">
+                    <a href="#/CAR" class="panel-title btn btn-link pull-right" >
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12"  >
+                        <div class="grid" ui-grid="dashboard.gridOptions">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

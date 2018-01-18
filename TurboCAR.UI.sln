@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8A5FAD02-A1ED-45EC-86EF-B78620150700}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08938335-C328-471A-A40C-3151EEC341A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TurboCAR.UI.Web", "src\TurboCAR.UI.Web\TurboCAR.UI.Web.csproj", "{522B84A8-77EE-4D10-9FA5-571F22283608}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{522B84A8-77EE-4D10-9FA5-571F22283608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{522B84A8-77EE-4D10-9FA5-571F22283608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{522B84A8-77EE-4D10-9FA5-571F22283608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{522B84A8-77EE-4D10-9FA5-571F22283608}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{522B84A8-77EE-4D10-9FA5-571F22283608} = {8A5FAD02-A1ED-45EC-86EF-B78620150700}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CBBE217-DC00-43A8-A97F-A1E4731A17DE}
+	EndGlobalSection
+EndGlobal

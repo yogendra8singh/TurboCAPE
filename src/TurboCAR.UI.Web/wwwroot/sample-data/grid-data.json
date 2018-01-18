@@ -1,0 +1,85 @@
+﻿[
+  [
+    {
+      "CAR": "200739",
+      "Borrower": "MINDTREE",
+      "CAR type": "New Loan",
+      "Team": "91A",
+      "Activity": "Edit CAR",
+      "Status": "New",
+      "Date": "6/7/2016 12:00:00 AM"
+    },
+    {
+      "CAR": "200680",
+      "Borrower": "1320 Domain,LP",
+      "CAR type": "Correction CAR",
+      "Team": "96E",
+      "Activity": "Edit CAR",
+      "Status": "New",
+      "Date": "4/22/2016 12:00:00 AM"
+    },
+    {
+      "CAR": "2006737",
+      "Borrower": "CUSTOMER",
+      "CAR type": "New Loan",
+      "Team": "91A",
+      "Activity": "Edit CAR",
+      "Status": "New",
+      "Date": "6/7/2016 12:00:00 AM"
+    },
+    {
+      "CAR": "200679",
+      "Borrower": "1320 Consumer,LP",
+      "CAR type": "Correction CAR",
+      "Team": "93E",
+      "Activity": "Edit CAR",
+      "Status": "New",
+      "Date": "4/22/2016 12:00:00 AM"
+    },
+    {
+      "CAR": "200677",
+      "Borrower": "1320 Domain,LP",
+      "CAR type": "Correction CAR",
+      "Team": "96A",
+      "Activity": "Edit CAR",
+      "Status": "New",
+      "Date": "4/22/2016 12:00:00 AM"
+    },
+    {
+      "CAR": "200662",
+      "Borrower": "1320 Excalibur,LP",
+      "CAR type": "Correction CAR",
+      "Team": "94F",
+      "Activity": "Edit CAR",
+      "Status": "New",
+      "Date": "4/4/2016 12:00:00 AM"
+    },
+    {
+      "CAR": "200661",
+      "Borrower": "1320 Excalibur,LP",
+      "CAR type": "New Loan",
+      "Team": "94F",
+      "Activity": "Edit CAR",
+      "Status": "New",
+      "Date": "4/4/2016 12:00:00 AM"
+    },
+    {
+      "CAR": "200612",
+      "Borrower": "100 TILTON CENTER LLC",
+      "CAR type": "Cash management",
+      "Team": "96J",
+      "Activity": "Edit CAR",
+      "Status": "New",
+      "Date": "3/9/2016 12:00:00 AM"
+    },
+    {
+      "CAR": "200606",
+      "Borrower": "CUSTOMER",
+      "CAR type": "Correction CAR",
+      "Team": "64A",
+      "Activity": "Edit CAR",
+      "Status": "New",
+      "Date": "2/25/2016 12:00:00 AM"
+    }
+  ]
+]

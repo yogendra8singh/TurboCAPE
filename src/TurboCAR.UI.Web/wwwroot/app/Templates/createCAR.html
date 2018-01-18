@@ -1,0 +1,247 @@
+﻿<div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Create</h3>
+        </div>
+        <div class="panel-body">
+            <form name="carform" ng-controller="CreateCARController as carController">
+               <div class="md-primary md-raised md-padding" id="popupContainer"></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="borrower" class="control-label">Borrower <span style="color:red">*</span></label>
+                            <select name="borrowerdropdown" class="form-control" required ng-required="true"  ng-class="{'required-error':carform.borrowerdropdown.$error.required}"
+                                     ng-options="option.id as option.name for option in carController.borrowers" ng-model="carController.borrowerId">
+                                <option value="">Select Borrower</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="cif" class="control-label">CIF <span style="color:red">*</span></label>
+                            <input type="text" disabled ng-model="(carController.borrowers|filter:{id:carController.borrowerId})[0].cif" class="form-control" placeholder="CIF">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="dateprepared" class="control-label">Date prepared <span style="color:red">*</span></label>
+                            <input type="text" disabled class="form-control" placeholder="Date prepared" ng-model="carController.dateCreated">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section-divider"></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="team" class="control-label">Team <span style="color:red">*</span></label>
+                            <select name="dropdownTeam" class="form-control"   ng-class="{'required-error':carform.dropdownTeam.$error.required}" 
+                                    ng-model="carController.teamId" ng-options="option.id as option.name for option in carController.teams" 
+                                    ng-change="carController.GetTeamMembers()" required>
+                                <option value="">Select Team</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="department" class="control-label">Department <span style="color:red">*</span></label>
+                            <input type="text" disabled ng-model="(carController.teams|filter:{id:carController.teamId})[0].department" class="form-control" placeholder="Department">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="dealleader" class="control-label">Deal team leader/SRM <span style="color:red">*</span></label>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" checked="checked">Team Member
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <select name="dropdownteamleader" ng-class="{'required-error':carform.dropdownteamleader.$error.required}" required class="form-control" ng-options="option.id as option.name for option in carController.TeamMembers" ng-model="carController.DealTeamLeaderId">
+                                        <option value="">Select Deal team leader</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" disabled >Other user
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" disabled/>
+                                        <a class="input-group-addon">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label class="form-subsection-heading">CAR Type <span style="color:red">*</span></label>
+                    </div>
+                    <div class="container-fluid form-subsection">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" ng-model="carController.CarType.name" value="NewLoan" checked="checked">Loan Approval
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" ng-model="carController.CarType.name" value="BusinessRisk" checked="checked">Business Risk
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" ng-model="carController.CarType.name" value="CorrectionCar" checked="checked">Correction CAR
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label class="form-subsection-heading">CAR Users</label>
+                    </div>
+                    <div class="container-fluid form-subsection">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="team" class="control-label">Associate/Analyst <span style="color:red">*</span></label>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" checked="checked">Team
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <select class="form-control" name="dropdownanalyst" required  ng-class="{'required-error':carform.dropdownanalyst.$error.required}"   ng-options="option.id as option.name for option in carController.TeamMembers"  ng-model="carController.CARAssociateId">
+                                            <option value="">Select Associate/Analyst</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" disabled>Other user
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" disabled />
+                                            <a class="input-group-addon">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="team" class="control-label">RM <span style="color:red">*</span></label>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" checked="checked">Team
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <select class="form-control" name="dropdownRM" ng-class="{'required-error':carform.dropdownRM.$error.required}" required ng-model="carController.CARRMId" ng-options="option.id as option.name for option in carController.TeamMembers">
+                                            <option value="">Select RM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" disabled>Other user
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" disabled />
+                                            <a class="input-group-addon">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="team" class="control-label">SCO/Reg Mgr <span style="color:red">*</span></label>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" checked="checked">Team
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <select class="form-control" name="dropdownSCO" required ng-class="{'required-error':carform.dropdownSCO.$error.required}"  ng-options="option.id as option.name for option in carController.TeamMembers" ng-model="carController.CARSCOId">
+                                            <option value="">Select SCO/Reg</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" disabled>Other user
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" disabled />
+                                            <a class="input-group-addon">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a type="button" class="btn btn-default pull-left" href="/">Back</a>
+                        <button type="button" class="btn btn-default pull-right" 
+                                ng-disabled="carform.$invalid||carform.$pristine||carform.dropdownTeam.$pristine||carform.borrowerdropdown.$pristine||carform.dropdownteamleader.$pristine||carform.dropdownanalyst.$pristine||carform.dropdownRM.$pristine||carform.dropdownSCO.$pristine"
+                                ng-click="carController.addCAR()">Create CAR</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
