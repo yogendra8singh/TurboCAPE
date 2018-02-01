@@ -8,16 +8,16 @@
       <![CDATA[Car package has been created successfully | ]]>
     </line>
   </reporter-output>
-  <suite started-at="2018-02-01T05:57:36Z" name="Suite" finished-at="2018-02-01T05:58:04Z" duration-ms="27211">
+  <suite started-at="2018-02-01T06:27:21Z" name="Suite" finished-at="2018-02-01T06:27:50Z" duration-ms="28821">
     <groups>
     </groups>
-    <test started-at="2018-02-01T05:57:36Z" name="Test" finished-at="2018-02-01T05:58:04Z" duration-ms="27211">
+    <test started-at="2018-02-01T06:27:21Z" name="Test" finished-at="2018-02-01T06:27:50Z" duration-ms="28821">
       <class name="com.mindtree.test.NewTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.mindtree.test.NewTest@5ccddd20]" started-at="2018-02-01T05:57:36Z" name="beforeMethod" finished-at="2018-02-01T05:57:46Z" duration-ms="9212" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.mindtree.test.NewTest@5ccddd20]" started-at="2018-02-01T06:27:22Z" name="beforeMethod" finished-at="2018-02-01T06:27:32Z" duration-ms="10088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="creatCarPackage()[pri:0, instance:com.mindtree.test.NewTest@5ccddd20]" started-at="2018-02-01T05:57:46Z" name="creatCarPackage" finished-at="2018-02-01T05:58:00Z" duration-ms="14602" status="PASS">
+        <test-method signature="creatCarPackage()[pri:0, instance:com.mindtree.test.NewTest@5ccddd20]" started-at="2018-02-01T06:27:32Z" name="creatCarPackage" finished-at="2018-02-01T06:27:47Z" duration-ms="15250" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Application Lauched successfully | ]]>
@@ -27,7 +27,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- creatCarPackage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.mindtree.test.NewTest@5ccddd20]" started-at="2018-02-01T05:58:00Z" name="afterMethod" finished-at="2018-02-01T05:58:04Z" duration-ms="3367" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.mindtree.test.NewTest@5ccddd20]" started-at="2018-02-01T06:27:47Z" name="afterMethod" finished-at="2018-02-01T06:27:50Z" duration-ms="3454" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
