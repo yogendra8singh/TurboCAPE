@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test name="Test(failed)">
     <classes>
       <class name="com.mindtree.test.NewTest">
         <methods>
           <include name="creatCarPackage"/>
           <include name="beforeMethod"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.mindtree.test.NewTest -->
     </classes>

@@ -5,9 +5,9 @@
     <classes>
       <class name="com.mindtree.test.NewTest">
         <methods>
-          <include name="afterMethod"/>
+          <include name="creatCarPackage"/>
           <include name="beforeMethod"/>
-          <include name="f"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.mindtree.test.NewTest -->
     </classes>

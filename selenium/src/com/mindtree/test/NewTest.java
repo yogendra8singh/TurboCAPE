@@ -36,13 +36,13 @@ public class NewTest {
 		Thread.sleep(Integer.parseInt(BaseClass.getData("wait2")));
 		WebElement team = driver.findElement(BaseClass.getPageElement("homepage", "team"));
 		Select teamSelect = new Select(team);
-		teamSelect.selectByIndex(3);
+		teamSelect.selectByIndex(1);
 
-		driver.findElement(BaseClass.getPageElement("homepage", "SRMradioBtn")).click();
+		//driver.findElement(BaseClass.getPageElement("homepage", "SRMradioBtn")).click();
 		Thread.sleep(Integer.parseInt(BaseClass.getData("wait2")));
 		WebElement SRMselect = driver.findElement(BaseClass.getPageElement("homepage", "SRMselect"));
 		Select SRMselectSelect = new Select(SRMselect);
-		SRMselectSelect.selectByIndex(2);
+		SRMselectSelect.selectByIndex(1);
 
 		
 		
@@ -50,11 +50,11 @@ public class NewTest {
 		
 		WebElement associate = driver.findElement(BaseClass.getPageElement("homepage", "associate"));
 		Select associateSelect = new Select(associate);
-		associateSelect.selectByIndex(2);
+		associateSelect.selectByIndex(1);
 		
 		WebElement rm = driver.findElement(BaseClass.getPageElement("homepage", "rm"));
 		Select rmSelect = new Select(rm);
-		rmSelect.selectByIndex(2);
+		rmSelect.selectByIndex(1);
 		
 		WebElement sco = driver.findElement(BaseClass.getPageElement("homepage", "sco"));
 		Select scoSelect = new Select(sco);
